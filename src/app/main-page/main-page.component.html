@@ -1,0 +1,13 @@
+<input type="text" [ngStyle]="{'backgroundColor': 'aqua'}" [(ngModel)]="title" />
+<h1 [ngClass]="{'color': title === 'bookmarks'}" #h1Tag>{{ title }}</h1>
+<ng-content *ngIf="title === 'bookmarks' else elseTemplate" > </ng-content>
+<!-- <ng-content> </ng-content> -->
+<ng-template #elseTemplate>
+<p>This is else template</p>
+</ng-template>
+
+<p *unless="title === 'bookmarks'">Testing unless</p>
+
+<div *ngFor="let number of list">
+  <p appHighlight [defaultColor]="'red'" [highlightColor]="'pink'">{{number}}</p>
+</div>
