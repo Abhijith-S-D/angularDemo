@@ -1,0 +1,5 @@
+<div class="container" [ngClass]="{ left: data.sender === 'abhi', right: data.sender === 'anu' }">
+  <p>
+    {{ data.text }} <sub [ngStyle]="{'float': 'right'}">{{data.time | date:'h:mm a'}}</sub>
+  </p>
+</div>

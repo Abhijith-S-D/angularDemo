@@ -15,9 +15,11 @@ import { FormsModule } from '@angular/forms';
 import { MainPageComponent } from './main-page/main-page.component';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
+import { ChatComponent } from './chat/chat.component';
+import { SearchPipePipe } from './search-pipe.pipe';
 
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, ToolbarComponent, MainPageComponent, HighlightDirective, UnlessDirective],
+  declarations: [AppComponent, SidenavComponent, ToolbarComponent, MainPageComponent, HighlightDirective, UnlessDirective, ChatComponent, SearchPipePipe],
   imports: [
     BrowserModule,
     AppRoutingModule,
