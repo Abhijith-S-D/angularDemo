@@ -17,9 +17,12 @@ import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
 import { ChatComponent } from './chat/chat.component';
 import { SearchPipePipe } from './search-pipe.pipe';
+import { OneComponent } from './one/one.component';
+import { TwoComponent } from './two/two.component';
+import { FavoritesComponent } from './favorites/favorites.component';
 
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, ToolbarComponent, MainPageComponent, HighlightDirective, UnlessDirective, ChatComponent, SearchPipePipe],
+  declarations: [AppComponent, SidenavComponent, ToolbarComponent, MainPageComponent, HighlightDirective, UnlessDirective, ChatComponent, SearchPipePipe, OneComponent, TwoComponent, FavoritesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
